@@ -1,5 +1,5 @@
 import _ from 'lodash';
-// import printMe from './print.js';
+import printMe from './print.js';
 
 function component() {
     var element = document.createElement('div');
@@ -8,7 +8,7 @@ function component() {
     element.innerHTML = _.join(['Hello', 'webpack'], ' ');
 
     btn.innerHTML = '点击这里，然后查看 console！';
-    // btn.onclick = printMe;
+    btn.onclick = printMe;
 
     element.appendChild(btn);
 
